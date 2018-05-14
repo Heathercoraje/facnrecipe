@@ -1,9 +1,9 @@
 const http = require('http');
-const router = require('./router.js');
+const router = require('./router');
 
 const server = http.createServer(router);
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 9000;
 
 server.listen(port, () => {
-   console.log(`Magic happens on port ${port}`);
+	console.log(`Magic happens on port ${port}`);
 });
