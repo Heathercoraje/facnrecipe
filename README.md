@@ -6,7 +6,7 @@ Simple recipe application for members of Founders & Coders community in Nazareth
 
 <img src="public/assets/facnrecipe.png" width="700">  
 
-Click [here](https://facnrecipe.herokuapp.com) to start FacnRecipe application.
+Click [here](https://still-ridge-21890.herokuapp.com/) to start FacnRecipe application.
 
 ### User story:
 
