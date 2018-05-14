@@ -12,56 +12,11 @@ CREATE TABLE IF NOT EXISTS recipe (
 
 
 
-INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('Falafel', '1 pound (about 2 cups) dry chickpeas/garbanzo beans - you must start with dry', 'garbanzo, salt, cumin', 'Arabic');
-INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('Sushi', 'Salmon or tuna, nori paper, cucumber', 'roll fish in nori paper and you are done', 'Asian');
--- INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('PostgreSQL Server Programming - Second Edition', 2015, 10, 'The British Library');
--- INSERT INTO books (book_name, year, max_reservation_time, library) VALUES ('Don''t Make Me Think', 2000, 7, 'Finland national library');
--- INSERT INTO books (book_name, year, max_reservation_time, library) VALUES ('Pride and Prejudice', 1813, 21, 'The British Library');
--- INSERT INTO books (book_name, year, max_reservation_time, library) VALUES ('Harry Potter and the Philosopher''s Stone', 1998, 14, 'The British Library');
---
--- CREATE TABLE IF NOT EXISTS mentors (
---     name    TEXT,
---     location    TEXT
--- );
---
--- INSERT INTO mentors (name, location) VALUES ('Tom', 'London');
--- INSERT INTO mentors (name, location) VALUES ('Shireen', 'Nazareth');
--- INSERT INTO mentors (name, location) VALUES ('Emily', 'Nazareth');
--- INSERT INTO mentors (name, location) VALUES ('Steve', 'London');
--- INSERT INTO mentors (name, location) VALUES ('Jack', 'Nazareth');
---
--- CREATE TABLE IF NOT EXISTS posts (
---     id    INTEGER,
---     mentor_name    TEXT
--- );
---
--- INSERT INTO posts (id, mentor_name) VALUES (20, 'Steve');
--- INSERT INTO posts (id, mentor_name) VALUES (32, 'Shireen');
--- INSERT INTO posts (id, mentor_name) VALUES (44, 'Shireen');
--- INSERT INTO posts (id, mentor_name) VALUES (19, 'Tom');
--- INSERT INTO posts (id, mentor_name) VALUES (57, 'Shireen');
---
--- CREATE TABLE IF NOT EXISTS likes (
---     mentor_name    TEXT,
---     post_id    INTEGER
--- );
---
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Emily', 20);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Emily', 44);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Emily', 19);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Emily', 57);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Shireen', 20);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Shireen', 19);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Jack', 20);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Jack', 19);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Jack', 32);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Jack', 44);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Tom', 20);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Tom', 32);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Tom', 44);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Steve', 32);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Steve', 44);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Steve', 19);
--- INSERT INTO likes (mentor_name, post_id) VALUES ('Steve', 57);
---
+INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('Falafel', '1 pound (about 2 cups) dry chickpeas/garbanzo beans - you must start with dry', 'Fill a medium saucepan 3 inches up with oil. Heat the oil on medium-high until it bubbles softly. Carefully drop the falafel patties in the oil, let them fry for about 3-4 minutes or so until medium brown. Avoid crowding the falafel in the saucepan, fry them in batches if necessary.', 'Arabic');
+INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('Sushi', 'Salmon or tuna, nori paper, cucumber', 'Inside out sushi (or Uramaki ) is similar to “maki sushi”, except that the rice is on the outside of the nori, and it is usually prepared with more than two fillings – for example salmon, cucumber and, what seems to be a slice of pineapple. It is sometimes topped with a thin slice of fish, seafood or vegetable like avocado or sweet potato.', 'Asian');
+INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('Spaghetti Pomodoro', '2 tablespoons extra-virgin olive oil, plus more for drizzling, 28-ounce can best-quality whole tomatoes, lightly pulsed in a blender', 'Place the olive oil and garlic in a 2-quart saucepan over medium heat. Swirl the pan to coat the garlic with oil and heat until garlic sizzles but does not brown, about 30 seconds. Add the red pepper flakes and stir. Add the tomatoes, salt, black pepper, and sugar and stir to combine. Bring to a boil and reduce the heat to a simmer. Cook for at least 20 minutes but no more than 30. Add the basil for last 5 minutes of cooking. Remove the basil before serving.', 'Italian');
+INSERT INTO recipe (recipe_name, recipe_ingredients, recipe_directions, recipe_origin) VALUES ('Full breakfast', 'bacon, sausages, eggs and a beverage such as coffee or tea', '
+A full English breakfast with fried egg, sausage, white and black pudding, bacon, mushrooms, baked beans, hash browns, toast, and half a tomato
+The traditional full English breakfast includes bacon (traditionally back bacon), fried, poached or scrambled eggs, fried or grilled tomatoes, fried mushrooms, fried bread or buttered toast, and sausages (also called "bangers")', 'British');
+
 COMMIT;

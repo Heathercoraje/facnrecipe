@@ -11,7 +11,6 @@ cancelButton.addEventListener('click', function(e) {
 var div = document.getElementById('recipe-container');
 //div for showing the result
 
-// refactor this line, data set and map it
 var asian = document.createElement('div');
 asian.setAttribute('id', 'asian');
 asian.setAttribute('class', 'asian');
@@ -76,7 +75,6 @@ function updateDom(err, data) {
 		console.log(err);
 	} else {
 		var recipes = JSON.parse(data);
-
 		var ul = document.createElement('ul');
 		var goBack = document.createElement('button');
 		goBack.setAttribute('class', 'goback-button');
@@ -93,31 +91,27 @@ function updateDom(err, data) {
 		recipes.forEach(function(recipe) {
 			var recipeBox = document.createElement('div');
 			recipeBox.setAttribute('class', 'recipe-box');
+
 			var name = document.createElement('li');
-			// name.innerHTML = `<strong>Title:</strong> ${recipe.recipe_name}<br><br>`;
 			name.innerHTML =
 				'<strong>Title:</strong> ' + recipe.recipe_name + '<br><br>';
 			recipeBox.appendChild(name);
 
 			var ingredients = document.createElement('li');
-			// ingredients.innerHTML = `<strong>Ingredients:</strong> ${recipe.recipe_ingredients}<br><br>`;
 			ingredients.innerHTML =
 				'<strong>Ingredients:</strong> ' +
 				recipe.recipe_ingredients +
 				' <br><br>';
 			recipeBox.appendChild(ingredients);
+
 			var directions = document.createElement('li');
-			// directions.innerHTML = `<strong>Directions:</strong> ${recipe.recipe_directions}<br><br>`;
 			directions.innerHTML =
 				'<strong>Directions:</strong> ' +
 				recipe.recipe_directions +
 				' <br><br>';
 			recipeBox.appendChild(directions);
 			ul.appendChild(recipeBox);
-
-			// ul.appendChild(document.createElement("hr"));
 		});
-
 		div.replaceChild(ul, div.firstChild);
 	}
 }
